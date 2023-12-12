@@ -9,6 +9,8 @@ export function Loginpage({ user }) {
   const [password, setPassword] = useState("");
   const Navigate = useNavigate("");
 
+  {/* Following sign in function follows */}
+  
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
@@ -16,10 +18,12 @@ export function Loginpage({ user }) {
         const user = userCredential.user;
         console.log(user);
         Navigate("/navbar");
+        {/*When user succesfully logged in he will navigate to the navbar page  */}
       })
       .catch((Error) => {
         console.log(Error);
         alert("Either Username or Password invalid");
+        {/* Incase user fails to loggin then an alert will appear and inform the Failure*/}
       });
   };
 
