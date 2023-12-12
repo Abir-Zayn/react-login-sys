@@ -61,6 +61,7 @@ export function Loginpage({ user }) {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                {/* Get the input value from the user */}
               />
 
               <input
@@ -69,6 +70,7 @@ export function Loginpage({ user }) {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                {/* Get the input value from the user */}
               />
 
               {/* Remember me and Forget Password */}
